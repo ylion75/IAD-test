@@ -54,6 +54,7 @@ class Contact
 
     /**
      * @ORM\Column(type="integer")
+     * @Assert\Positive
      */
     private $age;
 
