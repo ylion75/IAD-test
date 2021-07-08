@@ -22,11 +22,15 @@ class Contact
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\NotBlank
+     * @Assert\Length(min=2)
      */
     private $name;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\NotBlank
+     * @Assert\Length(min=2)
      */
     private $forname;
 
